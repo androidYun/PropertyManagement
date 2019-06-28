@@ -21,7 +21,7 @@ public class PropertyController {
     @RequestMapping(value = "/add", method = RequestMethod.POST)
     @ResponseBody
     private ResultEntity saveProperty(@RequestBody Property property) {
-        System.out.println("请求来了吗");
+        System.out.println("请求来了吗" + property.getAddress());
         boolean isInsert = propertyService.save(property);
         if (isInsert) {
             return ResultEntity.getSuccessResult("请求成功");

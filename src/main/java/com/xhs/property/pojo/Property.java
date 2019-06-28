@@ -18,6 +18,7 @@ public class Property {
 
     private String opposeCount;
 
+    //评价
     private String appraise;
 
     private Integer userId;

@@ -12,4 +12,8 @@ public class PropertyServiceImpl extends ServiceImpl<PropertyMapper, Property> i
 
     @Autowired
     PropertyMapper propertyMapper;
+
+    public Property selectById(int propertyId) {
+        return propertyMapper.selectByPrimaryKey(propertyId);
+    }
 }
