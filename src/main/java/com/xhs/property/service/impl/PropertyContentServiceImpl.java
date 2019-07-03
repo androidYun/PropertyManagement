@@ -11,8 +11,24 @@ import com.xhs.property.service.PropertyService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class PropertyContentServiceImpl extends ServiceImpl<PropertyContentMapper, PropertyContent> implements PropertyContentService {
 
 
+    @Autowired
+    PropertyContentMapper propertyContentMapper;
+
+    public List<PropertyContent> selectPropertyListById(int propertyId, int isAsc) {
+        return propertyContentMapper.selectListByPropertyId(propertyId, isAsc);
+    }
+
+    public PropertyContent selectPropertyById(int propertyContentId) {
+        return propertyContentMapper.selectByPrimaryKey(propertyContentId);
+    }
+
+    public int updatePropertyContent(PropertyContent propertyContent) {
+        return propertyContentMapper.updateByPrimaryKey(propertyContent);
+    }
 }

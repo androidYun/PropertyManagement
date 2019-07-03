@@ -14,5 +14,9 @@ import org.springframework.stereotype.Service;
 public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements UserService {
 
     @Autowired
-    PropertyMapper propertyMapper;
+    UserMapper userMapper;
+
+    public User selectById(int userId) {
+        return userMapper.selectByPrimaryKey(userId);
+    }
 }

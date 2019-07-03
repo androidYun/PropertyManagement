@@ -1,31 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.xhs.property.mapper.PropertyContentMapper">
-  <resultMap id="BaseResultMap" type="com.xhs.property.pojo.PropertyContent">
-    <id column="property_content_id" jdbcType="INTEGER" property="propertyContentId" />
-    <result column="property_id" jdbcType="INTEGER" property="propertyId" />
-    <result column="good_content" jdbcType="VARCHAR" property="goodContent" />
-    <result column="bad_content" jdbcType="VARCHAR" property="badContent" />
-    <result column="score" jdbcType="INTEGER" property="score" />
-    <result column="state" jdbcType="INTEGER" property="state" />
-    <result column="fail_pass_reason" jdbcType="VARCHAR" property="failPassReason" />
-    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
-  </resultMap>
-  <sql id="Base_Column_List">
+    <resultMap id="BaseResultMap" type="com.xhs.property.pojo.PropertyContent">
+        <id column="property_content_id" jdbcType="INTEGER" property="propertyContentId"/>
+        <result column="property_id" jdbcType="INTEGER" property="propertyId"/>
+        <result column="good_content" jdbcType="VARCHAR" property="goodContent"/>
+        <result column="bad_content" jdbcType="VARCHAR" property="badContent"/>
+        <result column="score" jdbcType="INTEGER" property="score"/>
+        <result column="state" jdbcType="INTEGER" property="state"/>
+        <result column="fail_pass_reason" jdbcType="VARCHAR" property="failPassReason"/>
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime"/>
+    </resultMap>
+    <sql id="Base_Column_List">
     property_content_id, property_id, good_content, bad_content, score, state, fail_pass_reason, 
     create_time
   </sql>
-  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
-    select 
-    <include refid="Base_Column_List" />
-    from property_content
-    where property_content_id = #{propertyContentId,jdbcType=INTEGER}
-  </select>
-  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from property_content
+        where property_content_id = #{propertyContentId,jdbcType=INTEGER}
+    </select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
     delete from property_content
     where property_content_id = #{propertyContentId,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" parameterType="com.xhs.property.pojo.PropertyContent">
+    <select id="selectListByPropertyId" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from property_content
+        where property_id = #{propertyId,jdbcType=INTEGER}
+        <choose>
+            <when test="isAsc=1">order by score asc</when>
+            <otherwise>order by score desc</otherwise>
+        </choose>
+    </select>
+    <insert id="insert" parameterType="com.xhs.property.pojo.PropertyContent">
     insert into property_content (property_content_id, property_id, good_content, 
       bad_content, score, state, 
       fail_pass_reason, create_time)
@@ -33,89 +43,89 @@
       #{badContent,jdbcType=VARCHAR}, #{score,jdbcType=INTEGER}, #{state,jdbcType=INTEGER}, 
       #{failPassReason,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP})
   </insert>
-  <insert id="insertSelective" parameterType="com.xhs.property.pojo.PropertyContent">
-    insert into property_content
-    <trim prefix="(" suffix=")" suffixOverrides=",">
-      <if test="propertyContentId != null">
-        property_content_id,
-      </if>
-      <if test="propertyId != null">
-        property_id,
-      </if>
-      <if test="goodContent != null">
-        good_content,
-      </if>
-      <if test="badContent != null">
-        bad_content,
-      </if>
-      <if test="score != null">
-        score,
-      </if>
-      <if test="state != null">
-        state,
-      </if>
-      <if test="failPassReason != null">
-        fail_pass_reason,
-      </if>
-      <if test="createTime != null">
-        create_time,
-      </if>
-    </trim>
-    <trim prefix="values (" suffix=")" suffixOverrides=",">
-      <if test="propertyContentId != null">
-        #{propertyContentId,jdbcType=INTEGER},
-      </if>
-      <if test="propertyId != null">
-        #{propertyId,jdbcType=INTEGER},
-      </if>
-      <if test="goodContent != null">
-        #{goodContent,jdbcType=VARCHAR},
-      </if>
-      <if test="badContent != null">
-        #{badContent,jdbcType=VARCHAR},
-      </if>
-      <if test="score != null">
-        #{score,jdbcType=INTEGER},
-      </if>
-      <if test="state != null">
-        #{state,jdbcType=INTEGER},
-      </if>
-      <if test="failPassReason != null">
-        #{failPassReason,jdbcType=VARCHAR},
-      </if>
-      <if test="createTime != null">
-        #{createTime,jdbcType=TIMESTAMP},
-      </if>
-    </trim>
-  </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.xhs.property.pojo.PropertyContent">
-    update property_content
-    <set>
-      <if test="propertyId != null">
-        property_id = #{propertyId,jdbcType=INTEGER},
-      </if>
-      <if test="goodContent != null">
-        good_content = #{goodContent,jdbcType=VARCHAR},
-      </if>
-      <if test="badContent != null">
-        bad_content = #{badContent,jdbcType=VARCHAR},
-      </if>
-      <if test="score != null">
-        score = #{score,jdbcType=INTEGER},
-      </if>
-      <if test="state != null">
-        state = #{state,jdbcType=INTEGER},
-      </if>
-      <if test="failPassReason != null">
-        fail_pass_reason = #{failPassReason,jdbcType=VARCHAR},
-      </if>
-      <if test="createTime != null">
-        create_time = #{createTime,jdbcType=TIMESTAMP},
-      </if>
-    </set>
-    where property_content_id = #{propertyContentId,jdbcType=INTEGER}
-  </update>
-  <update id="updateByPrimaryKey" parameterType="com.xhs.property.pojo.PropertyContent">
+    <insert id="insertSelective" parameterType="com.xhs.property.pojo.PropertyContent">
+        insert into property_content
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="propertyContentId != null">
+                property_content_id,
+            </if>
+            <if test="propertyId != null">
+                property_id,
+            </if>
+            <if test="goodContent != null">
+                good_content,
+            </if>
+            <if test="badContent != null">
+                bad_content,
+            </if>
+            <if test="score != null">
+                score,
+            </if>
+            <if test="state != null">
+                state,
+            </if>
+            <if test="failPassReason != null">
+                fail_pass_reason,
+            </if>
+            <if test="createTime != null">
+                create_time,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="propertyContentId != null">
+                #{propertyContentId,jdbcType=INTEGER},
+            </if>
+            <if test="propertyId != null">
+                #{propertyId,jdbcType=INTEGER},
+            </if>
+            <if test="goodContent != null">
+                #{goodContent,jdbcType=VARCHAR},
+            </if>
+            <if test="badContent != null">
+                #{badContent,jdbcType=VARCHAR},
+            </if>
+            <if test="score != null">
+                #{score,jdbcType=INTEGER},
+            </if>
+            <if test="state != null">
+                #{state,jdbcType=INTEGER},
+            </if>
+            <if test="failPassReason != null">
+                #{failPassReason,jdbcType=VARCHAR},
+            </if>
+            <if test="createTime != null">
+                #{createTime,jdbcType=TIMESTAMP},
+            </if>
+        </trim>
+    </insert>
+    <update id="updateByPrimaryKeySelective" parameterType="com.xhs.property.pojo.PropertyContent">
+        update property_content
+        <set>
+            <if test="propertyId != null">
+                property_id = #{propertyId,jdbcType=INTEGER},
+            </if>
+            <if test="goodContent != null">
+                good_content = #{goodContent,jdbcType=VARCHAR},
+            </if>
+            <if test="badContent != null">
+                bad_content = #{badContent,jdbcType=VARCHAR},
+            </if>
+            <if test="score != null">
+                score = #{score,jdbcType=INTEGER},
+            </if>
+            <if test="state != null">
+                state = #{state,jdbcType=INTEGER},
+            </if>
+            <if test="failPassReason != null">
+                fail_pass_reason = #{failPassReason,jdbcType=VARCHAR},
+            </if>
+            <if test="createTime != null">
+                create_time = #{createTime,jdbcType=TIMESTAMP},
+            </if>
+        </set>
+        where property_content_id = #{propertyContentId,jdbcType=INTEGER}
+    </update>
+    <update id="updateByPrimaryKey" parameterType="com.xhs.property.pojo.PropertyContent">
     update property_content
     set property_id = #{propertyId,jdbcType=INTEGER},
       good_content = #{goodContent,jdbcType=VARCHAR},

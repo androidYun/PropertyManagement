@@ -5,21 +5,21 @@ public class ResultEntity<T> {
 
     private String message;
 
-    private T t;
+    private T data;
 
 
     public static ResultEntity getSuccessResult(Object t) {
         ResultEntity resultEntity = new ResultEntity();
-        resultEntity.t = t;
+        resultEntity.data = t;
         resultEntity.code = 200;
         return resultEntity;
     }
 
     public static ResultEntity getErrorResult(String errorMessage) {
         ResultEntity resultEntity = new ResultEntity();
-        resultEntity.t = null;
+        resultEntity.data = null;
         resultEntity.message = errorMessage;
-        resultEntity.code = 200;
+        resultEntity.code = 203;
         return resultEntity;
     }
 
@@ -39,11 +39,11 @@ public class ResultEntity<T> {
         this.message = message;
     }
 
-    public T getT() {
-        return t;
+    public T getData() {
+        return data;
     }
 
-    public void setT(T t) {
-        this.t = t;
+    public void setData(T data) {
+        this.data = data;
     }
 }

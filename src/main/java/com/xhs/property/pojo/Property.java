@@ -3,7 +3,6 @@ package com.xhs.property.pojo;
 public class Property {
     private Integer propertyId;
 
-    //开发商名字
     private String developerName;
 
     private String villageName;
@@ -12,13 +11,12 @@ public class Property {
 
     private String propertyName;
 
-    private Float score;
+    private Float averageScore;
 
     private Integer supportCount;
 
     private String opposeCount;
 
-    //评价
     private String appraise;
 
     private Integer userId;
@@ -63,12 +61,12 @@ public class Property {
         this.propertyName = propertyName == null ? null : propertyName.trim();
     }
 
-    public Float getScore() {
-        return score;
+    public Float getAverageScore() {
+        return averageScore;
     }
 
-    public void setScore(Float score) {
-        this.score = score;
+    public void setAverageScore(Float averageScore) {
+        this.averageScore = averageScore;
     }
 
     public Integer getSupportCount() {

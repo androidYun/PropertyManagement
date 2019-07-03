@@ -9,10 +9,9 @@ import com.xhs.property.service.impl.PropertyContentServiceImpl;
 import com.xhs.property.service.impl.PropertyServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @Controller
 @RequestMapping(value = "/content")
@@ -40,6 +39,30 @@ public class PropertyContentController {
             return ResultEntity.getSuccessResult("请求成功");
         } else {
             return ResultEntity.getErrorResult("插入失败");
+        }
+    }
+
+    @RequestMapping(value = "/getPropertyContent/{isAsc}", method = RequestMethod.GET)
+    @ResponseBody
+    private ResultEntity getPropertyContent(int propertyId, @PathVariable int isAsc) {
+        List<PropertyContent> propertyContents = propertyContentService.selectPropertyListById(propertyId, isAsc);
+        return ResultEntity.getSuccessResult(propertyContents);
+    }
+
+
+    @RequestMapping(value = "/updatePropertyContentState/{state}", method = RequestMethod.GET)
+    @ResponseBody
+    private ResultEntity updatePropertyContentState(int propertyContentId, @PathVariable int state) {
+        PropertyContent propertyContent = propertyContentService.selectPropertyById(propertyContentId);
+        if (propertyContent == null) {
+            return ResultEntity.getErrorResult("此内容不存在");
+        }
+        propertyContent.setState(state);
+        int updateCount = propertyContentService.updatePropertyContent(propertyContent);
+        if (updateCount > 0) {
+            return ResultEntity.getSuccessResult("更新成功");
+        } else {
+            return ResultEntity.getErrorResult("更新失败");
         }
     }
 }

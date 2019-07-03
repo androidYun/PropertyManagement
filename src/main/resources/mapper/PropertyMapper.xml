@@ -1,149 +1,160 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.xhs.property.mapper.PropertyMapper">
-  <resultMap id="BaseResultMap" type="com.xhs.property.pojo.Property">
-    <id column="property_id" jdbcType="INTEGER" property="propertyId" />
-    <result column="developer_name" jdbcType="VARCHAR" property="developerName" />
-    <result column="village_name" jdbcType="VARCHAR" property="villageName" />
-    <result column="address" jdbcType="VARCHAR" property="address" />
-    <result column="property_name" jdbcType="VARCHAR" property="propertyName" />
-    <result column="score" jdbcType="REAL" property="score" />
-    <result column="support_count" jdbcType="INTEGER" property="supportCount" />
-    <result column="oppose_count" jdbcType="VARCHAR" property="opposeCount" />
-    <result column="appraise" jdbcType="VARCHAR" property="appraise" />
-    <result column="user_id" jdbcType="INTEGER" property="userId" />
-  </resultMap>
-  <sql id="Base_Column_List">
-    property_id, developer_name, village_name, address, property_name, score, support_count, 
-    oppose_count, appraise, user_id
+    <resultMap id="BaseResultMap" type="com.xhs.property.pojo.Property">
+        <id column="property_id" jdbcType="INTEGER" property="propertyId"/>
+        <result column="developer_name" jdbcType="VARCHAR" property="developerName"/>
+        <result column="village_name" jdbcType="VARCHAR" property="villageName"/>
+        <result column="address" jdbcType="VARCHAR" property="address"/>
+        <result column="property_name" jdbcType="VARCHAR" property="propertyName"/>
+        <result column="average_score" jdbcType="REAL" property="averageScore"/>
+        <result column="support_count" jdbcType="INTEGER" property="supportCount"/>
+        <result column="oppose_count" jdbcType="VARCHAR" property="opposeCount"/>
+        <result column="appraise" jdbcType="VARCHAR" property="appraise"/>
+        <result column="user_id" jdbcType="INTEGER" property="userId"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+    property_id, developer_name, village_name, address, property_name, average_score, 
+    support_count, oppose_count, appraise, user_id
   </sql>
-  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
-    select 
-    <include refid="Base_Column_List" />
-    from property
-    where property_id = #{propertyId,jdbcType=INTEGER}
-  </select>
-  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from property
+        where property_id = #{propertyId,jdbcType=INTEGER}
+    </select>
+
+    <select id="selectListByAsc" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+        select
+        p.property_id, developer_name, village_name, address, property_name, avg(pc.score) as average_score,
+        support_count, oppose_count, appraise, user_id
+        from property p,property_content pc where p.property_id=pc.property_id group by p.property_id
+        <choose>
+            <when test="isAsc=1">order by average_score asc</when>
+            <otherwise>order by average_score desc</otherwise>
+        </choose>
+    </select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
     delete from property
     where property_id = #{propertyId,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" parameterType="com.xhs.property.pojo.Property">
+    <insert id="insert" parameterType="com.xhs.property.pojo.Property">
     insert into property (property_id, developer_name, village_name, 
-      address, property_name, score, 
+      address, property_name, average_score, 
       support_count, oppose_count, appraise, 
       user_id)
     values (#{propertyId,jdbcType=INTEGER}, #{developerName,jdbcType=VARCHAR}, #{villageName,jdbcType=VARCHAR}, 
-      #{address,jdbcType=VARCHAR}, #{propertyName,jdbcType=VARCHAR}, #{score,jdbcType=REAL}, 
+      #{address,jdbcType=VARCHAR}, #{propertyName,jdbcType=VARCHAR}, #{averageScore,jdbcType=REAL}, 
       #{supportCount,jdbcType=INTEGER}, #{opposeCount,jdbcType=VARCHAR}, #{appraise,jdbcType=VARCHAR}, 
       #{userId,jdbcType=INTEGER})
   </insert>
-  <insert id="insertSelective" parameterType="com.xhs.property.pojo.Property">
-    insert into property
-    <trim prefix="(" suffix=")" suffixOverrides=",">
-      <if test="propertyId != null">
-        property_id,
-      </if>
-      <if test="developerName != null">
-        developer_name,
-      </if>
-      <if test="villageName != null">
-        village_name,
-      </if>
-      <if test="address != null">
-        address,
-      </if>
-      <if test="propertyName != null">
-        property_name,
-      </if>
-      <if test="score != null">
-        score,
-      </if>
-      <if test="supportCount != null">
-        support_count,
-      </if>
-      <if test="opposeCount != null">
-        oppose_count,
-      </if>
-      <if test="appraise != null">
-        appraise,
-      </if>
-      <if test="userId != null">
-        user_id,
-      </if>
-    </trim>
-    <trim prefix="values (" suffix=")" suffixOverrides=",">
-      <if test="propertyId != null">
-        #{propertyId,jdbcType=INTEGER},
-      </if>
-      <if test="developerName != null">
-        #{developerName,jdbcType=VARCHAR},
-      </if>
-      <if test="villageName != null">
-        #{villageName,jdbcType=VARCHAR},
-      </if>
-      <if test="address != null">
-        #{address,jdbcType=VARCHAR},
-      </if>
-      <if test="propertyName != null">
-        #{propertyName,jdbcType=VARCHAR},
-      </if>
-      <if test="score != null">
-        #{score,jdbcType=REAL},
-      </if>
-      <if test="supportCount != null">
-        #{supportCount,jdbcType=INTEGER},
-      </if>
-      <if test="opposeCount != null">
-        #{opposeCount,jdbcType=VARCHAR},
-      </if>
-      <if test="appraise != null">
-        #{appraise,jdbcType=VARCHAR},
-      </if>
-      <if test="userId != null">
-        #{userId,jdbcType=INTEGER},
-      </if>
-    </trim>
-  </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.xhs.property.pojo.Property">
-    update property
-    <set>
-      <if test="developerName != null">
-        developer_name = #{developerName,jdbcType=VARCHAR},
-      </if>
-      <if test="villageName != null">
-        village_name = #{villageName,jdbcType=VARCHAR},
-      </if>
-      <if test="address != null">
-        address = #{address,jdbcType=VARCHAR},
-      </if>
-      <if test="propertyName != null">
-        property_name = #{propertyName,jdbcType=VARCHAR},
-      </if>
-      <if test="score != null">
-        score = #{score,jdbcType=REAL},
-      </if>
-      <if test="supportCount != null">
-        support_count = #{supportCount,jdbcType=INTEGER},
-      </if>
-      <if test="opposeCount != null">
-        oppose_count = #{opposeCount,jdbcType=VARCHAR},
-      </if>
-      <if test="appraise != null">
-        appraise = #{appraise,jdbcType=VARCHAR},
-      </if>
-      <if test="userId != null">
-        user_id = #{userId,jdbcType=INTEGER},
-      </if>
-    </set>
-    where property_id = #{propertyId,jdbcType=INTEGER}
-  </update>
-  <update id="updateByPrimaryKey" parameterType="com.xhs.property.pojo.Property">
+    <insert id="insertSelective" parameterType="com.xhs.property.pojo.Property">
+        insert into property
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="propertyId != null">
+                property_id,
+            </if>
+            <if test="developerName != null">
+                developer_name,
+            </if>
+            <if test="villageName != null">
+                village_name,
+            </if>
+            <if test="address != null">
+                address,
+            </if>
+            <if test="propertyName != null">
+                property_name,
+            </if>
+            <if test="averageScore != null">
+                average_score,
+            </if>
+            <if test="supportCount != null">
+                support_count,
+            </if>
+            <if test="opposeCount != null">
+                oppose_count,
+            </if>
+            <if test="appraise != null">
+                appraise,
+            </if>
+            <if test="userId != null">
+                user_id,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="propertyId != null">
+                #{propertyId,jdbcType=INTEGER},
+            </if>
+            <if test="developerName != null">
+                #{developerName,jdbcType=VARCHAR},
+            </if>
+            <if test="villageName != null">
+                #{villageName,jdbcType=VARCHAR},
+            </if>
+            <if test="address != null">
+                #{address,jdbcType=VARCHAR},
+            </if>
+            <if test="propertyName != null">
+                #{propertyName,jdbcType=VARCHAR},
+            </if>
+            <if test="averageScore != null">
+                #{averageScore,jdbcType=REAL},
+            </if>
+            <if test="supportCount != null">
+                #{supportCount,jdbcType=INTEGER},
+            </if>
+            <if test="opposeCount != null">
+                #{opposeCount,jdbcType=VARCHAR},
+            </if>
+            <if test="appraise != null">
+                #{appraise,jdbcType=VARCHAR},
+            </if>
+            <if test="userId != null">
+                #{userId,jdbcType=INTEGER},
+            </if>
+        </trim>
+    </insert>
+    <update id="updateByPrimaryKeySelective" parameterType="com.xhs.property.pojo.Property">
+        update property
+        <set>
+            <if test="developerName != null">
+                developer_name = #{developerName,jdbcType=VARCHAR},
+            </if>
+            <if test="villageName != null">
+                village_name = #{villageName,jdbcType=VARCHAR},
+            </if>
+            <if test="address != null">
+                address = #{address,jdbcType=VARCHAR},
+            </if>
+            <if test="propertyName != null">
+                property_name = #{propertyName,jdbcType=VARCHAR},
+            </if>
+            <if test="averageScore != null">
+                average_score = #{averageScore,jdbcType=REAL},
+            </if>
+            <if test="supportCount != null">
+                support_count = #{supportCount,jdbcType=INTEGER},
+            </if>
+            <if test="opposeCount != null">
+                oppose_count = #{opposeCount,jdbcType=VARCHAR},
+            </if>
+            <if test="appraise != null">
+                appraise = #{appraise,jdbcType=VARCHAR},
+            </if>
+            <if test="userId != null">
+                user_id = #{userId,jdbcType=INTEGER},
+            </if>
+        </set>
+        where property_id = #{propertyId,jdbcType=INTEGER}
+    </update>
+    <update id="updateByPrimaryKey" parameterType="com.xhs.property.pojo.Property">
     update property
     set developer_name = #{developerName,jdbcType=VARCHAR},
       village_name = #{villageName,jdbcType=VARCHAR},
       address = #{address,jdbcType=VARCHAR},
       property_name = #{propertyName,jdbcType=VARCHAR},
-      score = #{score,jdbcType=REAL},
+      average_score = #{averageScore,jdbcType=REAL},
       support_count = #{supportCount,jdbcType=INTEGER},
       oppose_count = #{opposeCount,jdbcType=VARCHAR},
       appraise = #{appraise,jdbcType=VARCHAR},

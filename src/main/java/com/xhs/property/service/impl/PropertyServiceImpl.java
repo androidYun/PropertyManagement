@@ -7,6 +7,8 @@ import com.xhs.property.service.PropertyService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class PropertyServiceImpl extends ServiceImpl<PropertyMapper, Property> implements PropertyService {
 
@@ -15,5 +17,9 @@ public class PropertyServiceImpl extends ServiceImpl<PropertyMapper, Property> i
 
     public Property selectById(int propertyId) {
         return propertyMapper.selectByPrimaryKey(propertyId);
+    }
+
+    public List<Property> selectListByAsc(boolean isAsc) {
+        return propertyMapper.selectListByAsc(isAsc ? 1 : 2);
     }
 }

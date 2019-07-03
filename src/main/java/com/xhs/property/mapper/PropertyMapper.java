@@ -3,6 +3,8 @@ package com.xhs.property.mapper;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.xhs.property.pojo.Property;
 
+import java.util.List;
+
 public interface PropertyMapper extends BaseMapper<Property> {
     int deleteByPrimaryKey(Integer propertyId);
 
@@ -11,6 +13,8 @@ public interface PropertyMapper extends BaseMapper<Property> {
     int insertSelective(Property record);
 
     Property selectByPrimaryKey(Integer propertyId);
+
+    List<Property> selectListByAsc(int isAsc);
 
     int updateByPrimaryKeySelective(Property record);
 
