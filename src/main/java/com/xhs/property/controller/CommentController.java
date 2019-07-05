@@ -33,7 +33,7 @@ public class CommentController {
 
     @RequestMapping(value = "/addPraise", method = RequestMethod.GET)
     @ResponseBody
-    private ResultEntity addComment(int commentId) {
+    private ResultEntity addPraise(int commentId) {
         Comment comment = commentService.selectById(commentId);
         if (comment == null) {
             return ResultEntity.getErrorResult("评论内容不能为空");

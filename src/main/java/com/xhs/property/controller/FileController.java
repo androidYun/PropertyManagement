@@ -57,7 +57,6 @@ public class FileController {
         } else {
             return ResultEntity.getErrorResult("插入失败");
         }
-
     }
 
     private String updateFile(HttpSession session, MultipartFile file) {
@@ -69,6 +68,9 @@ public class FileController {
         File currentFile = new File(parentFilePath + "/" + fileName);
 
         try {
+            if (!currentFile.exists()) {
+                currentFile.mkdirs();
+            }
             if (!currentFile.exists()) {
                 currentFile.createNewFile();
             }
