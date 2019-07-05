@@ -13,7 +13,14 @@
 <body>
 <div style="background-color: aqua">
 
+    <form method="post" action="/xhs/file/imageUpdate" enctype="multipart/form-data">
+        选择一个文件:
+        <input type="file" name="uploadFile"  multiple/>
 
+        <input type="number" name="propertyContentId" />
+        <br/><br/>
+        <input type="submit" value="上传" />
+    </form>
 </div>
 </body>
 </html>

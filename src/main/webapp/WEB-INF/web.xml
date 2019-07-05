@@ -9,7 +9,13 @@
     <param-name>contextConfigLocation</param-name>          <!--参数名称-->
     <param-value>classpath:spring-mybatis.xml</param-value>     <!--参数取值-->
   </context-param>
-
+  <context-param>
+    <param-name>webAppRootKey</param-name>
+    <param-value>xhsImages</param-value>
+  </context-param>
+  <listener>
+    <listener-class>org.springframework.web.util.WebAppRootListener</listener-class>
+  </listener>
   <!--以下配置的加载顺序:先 ServletContext >> context-param >> listener >> filter >> servlet >>  spring-->
 
   <!--  -过滤器配置 -->
