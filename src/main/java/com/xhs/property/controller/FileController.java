@@ -1,12 +1,10 @@
 package com.xhs.property.controller;
 
 import com.xhs.property.pojo.PropertyContent;
-import com.xhs.property.pojo.PropertyImage;
 import com.xhs.property.pojo.ResultEntity;
 import com.xhs.property.service.impl.PropertyContentServiceImpl;
 import com.xhs.property.service.impl.PropertyImageServiceImpl;
 import com.xhs.property.utils.FileUtils;
-import com.xhs.property.utils.TimeUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,7 +13,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 
-import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.io.File;

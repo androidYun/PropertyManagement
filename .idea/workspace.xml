@@ -7,63 +7,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c8f698d6-7e62-4ef9-bf4a-1d2c1b933d1e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/PropertyManagement_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/xhs/property/exception/CustomExceptionResolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/xhs/property/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/xhs/property/exception/JSONExceptionHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/PropertyManagement_war_exploded/WEB-INF/classes/com/xhs/property/controller/CommentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/PropertyManagement_war_exploded/WEB-INF/classes/com/xhs/property/controller/CommentController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/PropertyManagement_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/PropertyManagement_war_exploded/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/xhsImages/00630e86-248e-41d0-aab7-8ed4e7459aebuploadFile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/xhsImages/02316c48-ec88-4b3b-b5ff-20b3a49fce5ffalse" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/xhsImages/083abb75-cd2e-416a-802a-628357ed977euploadFile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/xhsImages/12c2637a-9f1b-4eb7-bad1-abc14bd4cadf.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/xhsImages/1562229698531.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/xhsImages/179693d7-933f-4d51-b9ab-0c0d338ddd96png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/xhsImages/1adb6e6d-80d6-4768-8f9b-e7d91522f770png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/xhsImages/1ff1fb71-ab79-4d2f-92ab-1536754f53c6false" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/xhsImages/2dea306d3cac4c7_file_ic_quite.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/xhsImages/39392529-c78b-410d-83d6-0b66e4ea1417.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/xhsImages/3ea7e30d88ee4ae_file_ic_not_cpnnect_hang.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/xhsImages/3f61f876-f9fe-431d-937a-e48565cc1a53false" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/xhsImages/411a590b-bece-40c0-afe7-47c33354861c.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/xhsImages/4a5f2883f2464ac_file_ic_quite.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/xhsImages/55936b11-72f2-46ba-abc7-561d1e29400fpng" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/xhsImages/55ca8d59-8297-419f-a292-a703b4d28499false" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/xhsImages/5837e805-582d-43d2-bfdd-b56b0f2080a3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/xhsImages/5b1cc344-3b79-4592-9293-d66f5d3ff0e0png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/xhsImages/5cc9bdcb1c2f408_file_ic_vocie_camera.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/xhsImages/6994b652595a4cb_file_ic_refuse_call.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/xhsImages/6ea0015e8d92465_file_ic_quite.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/xhsImages/75a3988cdae5426_file_ic_not_cpnnect_hang.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/xhsImages/769797f8-a31a-43c7-b2c3-2258d1957751uploadFile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/xhsImages/78932f4b-8432-4617-9a02-35c7f7fb77b3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/xhsImages/87d0c2ea-e304-46d4-84cb-d842639efb32png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/xhsImages/8c213d32-4037-473b-a521-c920a74b2b6cng" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/xhsImages/8eb023ef-6a84-42c6-8b58-a1bf5b0ca0a7ng" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/xhsImages/91124456-38a8-4e6c-854d-c53f7892746bfalse" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/xhsImages/921e690147da453_file_ic_refuse_call.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/xhsImages/99463394-8f1d-4cc9-868d-c12a6bf0ed3buploadFile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/xhsImages/997c9212-d5ab-48bf-9c3d-9cf8ac284bcdng" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/xhsImages/9e9aad0b-1cda-4428-8017-8bdf008f8c52uploadFile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/xhsImages/a4a7f1876a6a4a9_file_ic_not_cpnnect_hang.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/xhsImages/a7dbfd96-bbbf-4010-93d6-76875a82f969ng" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/xhsImages/a97c6aaf18504f8_file_ic_video_call.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/xhsImages/ad2de87c973c45d_file_ic_vocie_camera.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/xhsImages/c328f5c5-7f65-49db-86f3-f4031aeb0f5d.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/xhsImages/c71b83ca-9c94-40bd-aec9-f48e52f1c9fc.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/xhsImages/c97d0988-7267-4abb-a15a-ef6c371ca735.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/xhsImages/d10303ce2d184f2_file_ic_video_call.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/xhsImages/e83db29d-b3be-4def-a639-a3e0a3df9115ng" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/xhsImages/f0aee113-6359-4af4-8c21-296f78190eafng" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/xhsImages/f13f6122a31f47b_file_ic_refuse_call.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/xhsImages/f349b8cb-6174-4fc8-8fa2-af6bee2e5cf4png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/xhsImages/f4aabd2827a246c_file_ic_video_call.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/xhsImages/f607261db19b480_file_ic_vocie_camera.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/PropertyManagement_war_exploded/WEB-INF/classes/com/xhs/property/controller/FileController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/PropertyManagement_war_exploded/WEB-INF/classes/com/xhs/property/controller/FileController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/PropertyManagement_war_exploded/WEB-INF/classes/com/xhs/property/controller/PropertyController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/PropertyManagement_war_exploded/WEB-INF/classes/com/xhs/property/controller/PropertyController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/PropertyManagement_war_exploded/WEB-INF/classes/com/xhs/property/pojo/PropertyContent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/PropertyManagement_war_exploded/WEB-INF/classes/com/xhs/property/pojo/PropertyContent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/PropertyManagement_war_exploded/WEB-INF/classes/com/xhs/property/service/PropertyService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/PropertyManagement_war_exploded/WEB-INF/classes/com/xhs/property/service/PropertyService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/PropertyManagement_war_exploded/WEB-INF/classes/com/xhs/property/service/impl/PropertyServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/PropertyManagement_war_exploded/WEB-INF/classes/com/xhs/property/service/impl/PropertyServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/PropertyManagement_war_exploded/WEB-INF/classes/mapper/PropertyContentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/PropertyManagement_war_exploded/WEB-INF/classes/mapper/PropertyContentMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/PropertyManagement_war_exploded/WEB-INF/classes/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/PropertyManagement_war_exploded/WEB-INF/classes/spring-mvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/xhs/property/controller/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xhs/property/controller/CommentController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/xhs/property/controller/FileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xhs/property/controller/FileController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/PropertyManagement-1.0-SNAPSHOT.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xhs/property/controller/PropertyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xhs/property/controller/PropertyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xhs/property/pojo/PropertyContent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xhs/property/pojo/PropertyContent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xhs/property/service/PropertyContentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xhs/property/service/PropertyContentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xhs/property/service/PropertyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xhs/property/service/PropertyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xhs/property/service/impl/PropertyServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xhs/property/service/impl/PropertyServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/PropertyContentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/PropertyContentMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/xhs/property/controller/CommentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xhs/property/controller/CommentController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xhs/property/controller/FileController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xhs/property/controller/FileController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xhs/property/controller/PropertyController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xhs/property/controller/PropertyController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xhs/property/pojo/PropertyContent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xhs/property/pojo/PropertyContent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xhs/property/service/PropertyService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xhs/property/service/PropertyService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/xhs/property/service/impl/PropertyServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xhs/property/service/impl/PropertyServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/PropertyContentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/PropertyContentMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring-mvc.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
+    <ignored mask="target" />
+    <ignored path="PropertyManagement.iml" />
+    <ignored path=".idea/" />
+    <manually-removed-from-ignored>
+      <directory path="/" />
+    </manually-removed-from-ignored>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,6 +84,13 @@
         <item name="Property@106.13.40.231" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="Property: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="property: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Property@106.13.40.231" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="Property: schema" type="76f4a085:MysqlImplModel$Schema" />
         <item name="property_image: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
@@ -112,11 +101,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xhs/property/controller/FileController.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xhs/property/controller/PropertyController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="466">
-              <caret line="50" column="28" lean-forward="true" selection-start-line="50" selection-start-column="28" selection-end-line="50" selection-end-column="28" />
+            <state relative-caret-position="153">
+              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xhs/property/controller/PropertyContentController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="46">
+              <caret line="28" column="88" lean-forward="true" selection-start-line="28" selection-start-column="88" selection-end-line="28" selection-end-column="88" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -125,105 +126,93 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xhs/property/service/PropertyService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+            <state relative-caret-position="184">
+              <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/PropertyImageMapper.xml">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="736">
-              <caret line="32" column="11" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
+            <state relative-caret-position="1472">
+              <caret line="64" selection-start-line="64" selection-end-line="64" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xhs/property/mapper/PropertyContentMapper.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xhs/property/pojo/Comment.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="253">
-              <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <caret line="11" column="31" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xhs/property/controller/CommentController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="687">
-              <caret line="32" selection-start-line="32" selection-end-line="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xhs/property/mapper/PropertyImageMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xhs/property/controller/PropertyImageController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xhs/property/controller/UserController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="542">
-              <caret line="38" column="51" selection-start-line="38" selection-start-column="51" selection-end-line="38" selection-end-column="51" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xhs/property/service/impl/PropertyServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xhs/property/pojo/Property.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="437">
-              <caret line="21" column="41" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="41" />
+              <caret line="19" column="27" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="27" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#722#723#0" expanded="true" />
-                <element signature="e#790#791#0" expanded="true" />
+                <element signature="e#1408#1409#0" expanded="true" />
+                <element signature="e#1443#1444#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xhs/property/service/impl/PropertyImageServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xhs/property/pojo/PropertyContent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="20" column="76" selection-start-line="20" selection-start-column="59" selection-end-line="20" selection-end-column="76" />
+            <state relative-caret-position="483">
+              <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1866#1867#0" expanded="true" />
+                <element signature="e#1899#1900#0" expanded="true" />
+                <element signature="e#1957#1958#0" expanded="true" />
+                <element signature="e#2001#2002#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xhs/property/pojo/PropertyImage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="46">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xhs/property/pojo/ResultEntity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="46">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+              <folding>
+                <element signature="e#921#922#0" expanded="true" />
+                <element signature="e#948#949#0" expanded="true" />
+                <element signature="e#983#984#0" expanded="true" />
+                <element signature="e#1015#1016#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xhs/property/pojo/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="299">
+              <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -256,6 +245,10 @@
       <find>WebAppRootListener</find>
       <find>foreach</find>
       <find>List</find>
+      <find>collection</find>
+      <find>CustomExceptionResolver</find>
+      <find>selectListByPropertyId</find>
+      <find>pagehelper</find>
     </findStrings>
     <replaceStrings>
       <replace>goodContent</replace>
@@ -269,33 +262,24 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/com/xhs/property/entity/ResultEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/spring-mybatis.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/xhs/property/mapper/UserMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xhs/property/service/PropertyContentServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xhs/property/enumClass/PropertyContentEnum.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xhs/property/pojo/PropertyContent.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xhs/property/mapper/CommentMapper.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/CommentMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/xhs/property/service/CommentService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xhs/property/service/impl/CommentServiceImpl.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/xhs/property/utils/TimeUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xhs/property/pojo/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xhs/property/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xhs/property/service/impl/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xhs/property/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xhs/property/service/PropertyService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xhs/property/controller/PropertyController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xhs/property/pojo/Property.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xhs/property/mapper/PropertyMapper.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/PropertyMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xhs/property/service/impl/PropertyServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xhs/property/mapper/PropertyContentMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/PropertyContentMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/xhs/property/service/impl/PropertyContentServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xhs/property/service/PropertyContentService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xhs/property/controller/PropertyContentController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xhs/property/pojo/ResultEntity.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
@@ -308,8 +292,20 @@
         <option value="$PROJECT_DIR$/src/main/java/com/xhs/property/controller/PropertyImageController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/PropertyImageMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xhs/property/exception/JSONExceptionHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xhs/property/exception/GlobalExceptionHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xhs/property/pojo/PropertyContent.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/PropertyContentMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/xhs/property/controller/CommentController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xhs/property/service/PropertyContentService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xhs/property/controller/FileController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xhs/property/exception/CustomExceptionResolver.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring-mybatis.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xhs/property/service/impl/PropertyServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xhs/property/service/PropertyService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xhs/property/controller/PropertyController.java" />
       </list>
     </option>
   </component>
@@ -363,7 +359,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -436,6 +432,32 @@
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="xhs" type="462c0819:PsiDirectoryNode" />
               <item name="property" type="462c0819:PsiDirectoryNode" />
+              <item name="exception" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PropertyManagement" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PropertyManagement" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="xhs" type="462c0819:PsiDirectoryNode" />
+              <item name="property" type="462c0819:PsiDirectoryNode" />
+              <item name="pojo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PropertyManagement" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PropertyManagement" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PropertyManagement" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PropertyManagement" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -443,11 +465,77 @@
               <item name="PropertyManagement" type="462c0819:PsiDirectoryNode" />
               <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="PropertyManagement" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PropertyManagement" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="generated-sources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PropertyManagement" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PropertyManagement" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="PropertyManagement-1.0-SNAPSHOT" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PropertyManagement" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="PropertyManagement" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="PropertyManagement" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-webmvc:4.0.2.RELEASE" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="PropertyManagement" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-webmvc:4.0.2.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-webmvc-4.0.2.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PropertyManagement" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-webmvc:4.0.2.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-webmvc-4.0.2.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PropertyManagement" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-webmvc:4.0.2.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-webmvc-4.0.2.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="springframework" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PropertyManagement" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-webmvc:4.0.2.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-webmvc-4.0.2.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="springframework" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PropertyManagement" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-webmvc:4.0.2.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-webmvc-4.0.2.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="springframework" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="servlet" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -456,13 +544,13 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/out/artifacts/PropertyManagement_war" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.idea" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.38275862" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Ignored.Files" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -582,12 +670,16 @@
       <workItem from="1562057225833" duration="5016000" />
       <workItem from="1562114468046" duration="7850000" />
       <workItem from="1562227502115" duration="8563000" />
-      <workItem from="1562310616434" duration="6136000" />
+      <workItem from="1562310616434" duration="6442000" />
+      <workItem from="1562373174437" duration="3450000" />
+      <workItem from="1562549392555" duration="11564000" />
+      <workItem from="1562655768349" duration="7647000" />
+      <workItem from="1562718872275" duration="5355000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70186000" />
+    <option name="totallyTimeSpent" value="98508000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -602,7 +694,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49162012" visible="true" weight="0.22547974" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49162012" visible="true" weight="0.23560767" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24935733" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -610,22 +702,22 @@
       <window_info id="Web" order="5" sideWeight="0.5104167" side_tool="true" weight="0.2281491" />
       <window_info id="Favorites" order="6" sideWeight="0.5083799" side_tool="true" weight="0.2281491" />
       <window_info id="Designer" order="7" />
-      <window_info anchor="bottom" id="Database Console" weight="0.12138084" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.1792873" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32962137" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.66815144" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="5" sideWeight="0.4974293" weight="0.33741647" />
       <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.5051414" side_tool="true" weight="0.34776536" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" sideWeight="0.49743262" weight="0.32793522" />
       <window_info anchor="bottom" id="Spring" order="8" weight="0.32793522" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.6035635" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.22828507" />
       <window_info anchor="bottom" x="22" y="314" width="1556" height="232" id="Application Servers" order="10" sideWeight="0.4974293" type="FLOATING" weight="0.32402235" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.033407573" />
       <window_info anchor="bottom" id="Debug" order="12" sideWeight="0.49485862" weight="0.3585746" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Console" order="15" weight="0.12138084" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -673,162 +765,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-extension/3.1.2/mybatis-plus-extension-3.1.2.jar!/com/baomidou/mybatisplus/extension/service/impl/ServiceImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-990">
-          <caret line="121" column="46" selection-start-line="121" selection-start-column="43" selection-end-line="121" selection-end-column="46" />
-          <folding>
-            <element signature="e#2456#2457#0" expanded="true" />
-            <element signature="e#2523#2524#0" expanded="true" />
-            <element signature="e#9192#9193#0" expanded="true" />
-            <element signature="e#9245#9246#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-core/3.1.2/mybatis-plus-core-3.1.2.jar!/com/baomidou/mybatisplus/core/conditions/Wrapper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-core/3.1.2/mybatis-plus-core-3.1.2.jar!/com/baomidou/mybatisplus/core/mapper/BaseMapper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="30" column="9" lean-forward="true" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xhs/property/mapper/CommentMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="57" selection-start-line="5" selection-start-column="57" selection-end-line="5" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5842">
-          <caret line="254" column="17" selection-start-line="254" selection-start-column="17" selection-end-line="254" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xhs/property/service/CommentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xhs/property/pojo/Comment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="26" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xhs/property/pojo/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="23" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xhs/property/utils/TimeUtils.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/CommentMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2093">
-          <caret line="91" column="11" selection-start-line="91" selection-start-column="11" selection-end-line="91" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="35" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/lang/Integer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="644">
-          <caret line="51" column="19" selection-start-line="51" selection-start-column="19" selection-end-line="51" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/lang/Boolean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="40" column="18" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xhs/property/mapper/UserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xhs/property/pojo/Property.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="63" column="36" selection-start-line="63" selection-start-column="36" selection-end-line="63" selection-end-column="36" />
-          <folding>
-            <element signature="e#1464#1465#0" expanded="true" />
-            <element signature="e#1519#1520#0" expanded="true" />
-            <element signature="e#1567#1568#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xhs/property/service/impl/CommentServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-          <folding>
-            <element signature="e#837#838#0" expanded="true" />
-            <element signature="e#901#902#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xhs/property/mapper/PropertyMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="16" column="44" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xhs/property/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xhs/property/service/PropertyService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xhs/property/service/impl/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
@@ -847,56 +783,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/PropertyContentMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/javax/javaee-api/7.0/javaee-api-7.0.jar!/javax/servlet/ServletContext.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1150">
           <caret line="61" column="11" selection-start-line="61" selection-start-column="11" selection-end-line="61" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xhs/property/pojo/ResultEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="759">
-          <caret line="41" column="24" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
-          <folding>
-            <element signature="e#948#949#0" expanded="true" />
-            <element signature="e#983#984#0" expanded="true" />
-            <element signature="e#1015#1016#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xhs/property/pojo/PropertyContent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" column="25" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="25" />
-          <folding>
-            <element signature="e#760#761#0" expanded="true" />
-            <element signature="e#794#795#0" expanded="true" />
-            <element signature="e#848#849#0" expanded="true" />
-            <element signature="e#894#895#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xhs/property/service/impl/PropertyContentServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="30" column="69" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xhs/property/service/PropertyContentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="16" column="63" selection-start-line="16" selection-start-column="63" selection-end-line="16" selection-end-column="63" />
         </state>
       </provider>
     </entry>
@@ -915,13 +805,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mvc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="556">
-          <caret line="66" column="62" lean-forward="true" selection-start-line="66" selection-start-column="62" selection-end-line="66" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/util/ArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="248">
@@ -936,16 +819,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xhs/property/controller/PropertyContentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="35" column="64" selection-start-line="35" selection-start-column="53" selection-end-line="35" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xhs/property/service/PropertyImageService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
@@ -953,15 +826,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://2249c0ca-805f-483b-b379-c5800af971b7/schema/Property/table/property_image">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="b95bbe79-65a0-4077-969f-67f68586e3e5">
-          <filtering>
-            <filter text="" />
-          </filtering>
         </state>
       </provider>
     </entry>
@@ -1001,48 +865,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xhs/property/controller/PropertyController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="14" selection-start-line="14" selection-end-line="15" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xhs/property/service/impl/PropertyServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="21" column="41" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#722#723#0" expanded="true" />
-            <element signature="e#790#791#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xhs/property/service/impl/PropertyImageServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="20" column="76" selection-start-line="20" selection-start-column="59" selection-end-line="20" selection-end-column="76" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xhs/property/mapper/PropertyImageMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
@@ -1057,20 +879,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xhs/property/mapper/PropertyContentMapper.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xhs/property/service/impl/PropertyImageServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xhs/property/controller/CommentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="687">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        <state relative-caret-position="276">
+          <caret line="20" column="76" selection-start-line="20" selection-start-column="59" selection-end-line="20" selection-end-column="76" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1079,7 +891,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xhs/property/controller/PropertyImageController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
+        <state relative-caret-position="253">
           <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1087,10 +899,116 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xhs/property/controller/UserController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xhs/property/mapper/CommentMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="542">
-          <caret line="38" column="51" selection-start-line="38" selection-start-column="51" selection-end-line="38" selection-end-column="51" />
+        <state relative-caret-position="92">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://2249c0ca-805f-483b-b379-c5800af971b7/schema/Property/table/property_image">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="7201a976-4834-43ef-b62c-daa8022b00f0">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.0.2.RELEASE/spring-webmvc-4.0.2.RELEASE.jar!/org/springframework/web/servlet/HandlerExceptionResolver.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.0.2.RELEASE/spring-context-4.0.2.RELEASE.jar!/org/springframework/ui/ModelMap.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.0.2.RELEASE/spring-webmvc-4.0.2.RELEASE.jar!/org/springframework/web/servlet/ModelAndView.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.0.2.RELEASE/spring-webmvc-4.0.2.RELEASE.jar!/org/springframework/web/servlet/HandlerExecutionChain.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-621">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/PropertyContentMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="21" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="14" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xhs/property/mapper/UserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xhs/property/mapper/PropertyMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-extension/3.1.2/mybatis-plus-extension-3.1.2.jar!/com/baomidou/mybatisplus/extension/service/impl/ServiceImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="67" column="19" selection-start-line="67" selection-start-column="19" selection-end-line="67" selection-end-column="19" />
+          <folding>
+            <element signature="e#2456#2457#0" expanded="true" />
+            <element signature="e#2523#2524#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xhs/property/service/impl/PropertyContentServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="16" column="117" selection-start-line="16" selection-start-column="117" selection-end-line="16" selection-end-column="117" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xhs/property/service/PropertyContentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="16" column="63" selection-start-line="16" selection-start-column="63" selection-end-line="16" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xhs/property/mapper/PropertyImageMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xhs/property/mapper/PropertyContentMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1099,8 +1017,181 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xhs/property/controller/FileController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="50" column="28" lean-forward="true" selection-start-line="50" selection-start-column="28" selection-end-line="50" selection-end-column="28" />
+        <state relative-caret-position="437">
+          <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/lang/Exception.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-90">
+          <caret line="54" column="5" lean-forward="true" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xhs/property/exception/JSONExceptionHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xhs/property/exception/GlobalExceptionHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#855#856#0" expanded="true" />
+            <element signature="e#913#914#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xhs/property/controller/CommentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xhs/property/exception/CustomExceptionResolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="27" column="33" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
+          <folding>
+            <element signature="e#871#887#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mvc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1236">
+          <caret line="55" column="4" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mybatis.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="882">
+          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xhs/property/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13">
+          <caret line="18" column="32" lean-forward="true" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xhs/property/controller/PropertyController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xhs/property/service/impl/PropertyServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="15" column="93" selection-start-line="15" selection-start-column="93" selection-end-line="15" selection-end-column="93" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xhs/property/service/PropertyService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1472">
+          <caret line="64" selection-start-line="64" selection-end-line="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xhs/property/pojo/Comment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="31" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xhs/property/pojo/Property.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="19" column="27" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="27" />
+          <folding>
+            <element signature="e#1408#1409#0" expanded="true" />
+            <element signature="e#1443#1444#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xhs/property/pojo/PropertyContent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1866#1867#0" expanded="true" />
+            <element signature="e#1899#1900#0" expanded="true" />
+            <element signature="e#1957#1958#0" expanded="true" />
+            <element signature="e#2001#2002#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xhs/property/pojo/PropertyImage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xhs/property/pojo/ResultEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding>
+            <element signature="e#921#922#0" expanded="true" />
+            <element signature="e#948#949#0" expanded="true" />
+            <element signature="e#983#984#0" expanded="true" />
+            <element signature="e#1015#1016#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xhs/property/pojo/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xhs/property/controller/PropertyContentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="28" column="88" lean-forward="true" selection-start-line="28" selection-start-column="88" selection-end-line="28" selection-end-column="88" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1125,10 +1216,10 @@
         <settings>
           <artifact-editor>
             <show-content>
-              <type id="jpa-descriptors" />
               <type id="javaee-facet-resources" />
-              <type id="library" />
+              <type id="jpa-descriptors" />
               <type id="artifact" />
+              <type id="library" />
             </show-content>
           </artifact-editor>
           <last-edited>PropertyManagement:war</last-edited>

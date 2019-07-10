@@ -15,10 +15,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class CommentController {
     @Autowired
     CommentServiceImpl commentService;
-
     @RequestMapping(value = "/add", method = RequestMethod.POST)
     @ResponseBody
-    private ResultEntity addComment(@RequestBody Comment comment) {
+    public ResultEntity addComment(@RequestBody Comment comment) throws Exception{
         if (comment.getContent() == null) {
             return ResultEntity.getErrorResult("评论内容不能为空");
         }

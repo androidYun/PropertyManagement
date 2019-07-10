@@ -10,6 +10,9 @@
         <result column="state" jdbcType="INTEGER" property="state"/>
         <result column="fail_pass_reason" jdbcType="VARCHAR" property="failPassReason"/>
         <result column="create_time" jdbcType="TIMESTAMP" property="createTime"/>
+        <collection property="imagesList" ofType="java.lang.String" javaType="list">
+            <result column="url"/>
+        </collection>
     </resultMap>
     <sql id="Base_Column_List">
     property_content_id, property_id, good_content, bad_content, score, state, fail_pass_reason, 
@@ -27,9 +30,9 @@
   </delete>
     <select id="selectListByPropertyId" resultMap="BaseResultMap">
         select
-        <include refid="Base_Column_List"/>
-        from property_content
-        where property_id = #{propertyId,jdbcType=INTEGER}
+        pc.*,pi.url
+        from property_content pc,property_image pi
+        where pc.property_id = #{propertyId,jdbcType=INTEGER}
         <choose>
             <when test="isAsc=1">order by score asc</when>
             <otherwise>order by score desc</otherwise>

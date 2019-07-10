@@ -1,6 +1,7 @@
 package com.xhs.property.pojo;
 
 import java.util.Date;
+import java.util.List;
 
 public class PropertyContent {
     private Integer propertyContentId;
@@ -18,6 +19,8 @@ public class PropertyContent {
     private String failPassReason;
 
     private Date createTime;
+
+    private List<String> imagesList;
 
     public Integer getPropertyContentId() {
         return propertyContentId;
@@ -81,5 +84,13 @@ public class PropertyContent {
 
     public void setCreateTime(Date createTime) {
         this.createTime = createTime;
+    }
+
+    public List<String> getImagesList() {
+        return imagesList;
+    }
+
+    public void setImagesList(List<String> imagesList) {
+        this.imagesList = imagesList;
     }
 }
