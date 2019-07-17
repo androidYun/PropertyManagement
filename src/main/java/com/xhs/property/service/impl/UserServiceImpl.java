@@ -19,4 +19,8 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
     public User selectById(int userId) {
         return userMapper.selectByPrimaryKey(userId);
     }
+
+    public User selectByPhone(String phoneNumber) {
+        return userMapper.selectByPhone(phoneNumber);
+    }
 }

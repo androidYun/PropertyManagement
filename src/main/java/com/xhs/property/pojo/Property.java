@@ -15,7 +15,7 @@ public class Property {
 
     private Integer supportCount;
 
-    private String opposeCount;
+    private int opposeCount;
 
     private String appraise;
 
@@ -77,12 +77,12 @@ public class Property {
         this.supportCount = supportCount;
     }
 
-    public String getOpposeCount() {
+    public int getOpposeCount() {
         return opposeCount;
     }
 
-    public void setOpposeCount(String opposeCount) {
-        this.opposeCount = opposeCount == null ? null : opposeCount.trim();
+    public void setOpposeCount(int opposeCount) {
+        this.opposeCount = opposeCount;
     }
 
     public String getAppraise() {

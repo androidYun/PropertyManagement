@@ -1,9 +1,7 @@
 package com.xhs.property.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
-import com.github.pagehelper.PageInfo;
 import com.xhs.property.mapper.PropertyMapper;
 import com.xhs.property.pojo.Property;
 import com.xhs.property.service.PropertyService;
@@ -22,7 +20,8 @@ public class PropertyServiceImpl extends ServiceImpl<PropertyMapper, Property> i
         return propertyMapper.selectByPrimaryKey(propertyId);
     }
 
-    public List<Property> selectListByAsc(boolean isAsc,int pageNum,int pageSize) {
+    public List<Property> selectListByAsc(boolean isAsc, int pageNum, int pageSize) {
+        PageHelper.startPage(pageNum, pageSize);
         return propertyMapper.selectListByAsc(isAsc ? 1 : 2);
     }
 }

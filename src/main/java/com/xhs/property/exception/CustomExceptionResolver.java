@@ -25,7 +25,7 @@ public class CustomExceptionResolver implements HandlerExceptionResolver {
         } else if (e instanceof TimeoutException) {
             errorResult.put("message", "超时" + e.getMessage());
         }
-        System.out.println("时间"+o);
+        System.out.println("时间"+e.getMessage());
         errorResult.put("code", 203);
         view.setAttributesMap(errorResult);
         modelAndView.setView(view);

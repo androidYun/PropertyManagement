@@ -26,12 +26,12 @@
 
     <select id="selectListByAsc" parameterType="java.lang.Integer" resultMap="BaseResultMap">
         select
-        p.property_id, developer_name, village_name, address, property_name, avg(pc.score) as average_score,
-        support_count, oppose_count, appraise, user_id
-        from property p,property_content pc where p.property_id=pc.property_id group by p.property_id
+        p.*
+        from property p
+        left join property_content pc on p.property_id=pc.property_id
         <choose>
-            <when test="isAsc=1">order by average_score asc</when>
-            <otherwise>order by average_score desc</otherwise>
+            <when test="isAsc=1">order by p.property_id asc</when>
+            <otherwise>order by p.property_id desc</otherwise>
         </choose>
     </select>
     <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">

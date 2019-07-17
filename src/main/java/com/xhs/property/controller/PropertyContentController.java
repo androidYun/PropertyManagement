@@ -1,6 +1,5 @@
 package com.xhs.property.controller;
 
-import com.baomidou.mybatisplus.core.conditions.Wrapper;
 import com.xhs.property.enumClass.PropertyContentEnum;
 import com.xhs.property.pojo.Property;
 import com.xhs.property.pojo.PropertyContent;
@@ -25,7 +24,7 @@ public class PropertyContentController {
 
     @RequestMapping(value = "/add", method = RequestMethod.POST)
     @ResponseBody
-    private ResultEntity savePropertyContent(@RequestBody PropertyContent propertyContent) {
+    public ResultEntity savePropertyContent(@RequestBody PropertyContent propertyContent) {
         Property property = propertyService.selectById(propertyContent.getPropertyId());
         if (property == null) {
             return ResultEntity.getErrorResult("请选择物业信息");
@@ -44,7 +43,7 @@ public class PropertyContentController {
 
     @RequestMapping(value = "/getPropertyContent/{isAsc}", method = RequestMethod.GET)
     @ResponseBody
-    private ResultEntity getPropertyContent(int propertyId, @PathVariable int isAsc) {
+    public ResultEntity getPropertyContent(int propertyId, @PathVariable int isAsc) {
         List<PropertyContent> propertyContents = propertyContentService.selectPropertyListById(propertyId, isAsc);
         return ResultEntity.getSuccessResult(propertyContents);
     }
@@ -52,7 +51,7 @@ public class PropertyContentController {
 
     @RequestMapping(value = "/updatePropertyContentState/{state}", method = RequestMethod.GET)
     @ResponseBody
-    private ResultEntity updatePropertyContentState(int propertyContentId, @PathVariable int state) {
+    public ResultEntity updatePropertyContentState(int propertyContentId, @PathVariable int state) {
         PropertyContent propertyContent = propertyContentService.selectPropertyById(propertyContentId);
         if (propertyContent == null) {
             return ResultEntity.getErrorResult("此内容不存在");

@@ -12,6 +12,8 @@ public interface UserMapper extends BaseMapper<User> {
 
     User selectByPrimaryKey(Integer userId);
 
+    User selectByPhone(String phoneNumber);
+
     int updateByPrimaryKeySelective(User record);
 
     int updateByPrimaryKey(User record);

@@ -26,7 +26,7 @@ public class PropertyImageController {
 
     @RequestMapping(value = "/propertyContent/{propertyContentId}", method = RequestMethod.GET)
     @ResponseBody
-    private ResultEntity getPropertyImageList(@PathVariable int propertyContentId) {
+    public ResultEntity getPropertyImageList(@PathVariable int propertyContentId) {
         PropertyContent propertyContent = propertyContentService.selectPropertyById(propertyContentId);
         if (propertyContent == null) {
             return ResultEntity.getErrorResult("这个文章不存在");

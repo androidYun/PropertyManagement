@@ -2,14 +2,17 @@ package com.xhs.property.controller;
 
 
 import com.github.pagehelper.PageInfo;
+import com.xhs.property.entity.PageEntity;
 import com.xhs.property.pojo.Property;
 import com.xhs.property.pojo.ResultEntity;
 import com.xhs.property.service.impl.PropertyServiceImpl;
+import com.xhs.property.utils.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Controller
@@ -23,7 +26,25 @@ public class PropertyController {
     @Transactional(rollbackFor = Exception.class)
     @ResponseBody
     public ResultEntity saveProperty(@RequestBody Property property) throws Exception {
-        System.out.println("请求来了吗" + property.getAddress());
+        if (property == null) {
+            return ResultEntity.getErrorResult("参数不合法");
+        }
+        if (StringUtils.isEmpty(property.getAddress())) {
+            return ResultEntity.getErrorResult("地址不能为空");
+        }
+        if (StringUtils.isEmpty(property.getDeveloperName())) {
+            return ResultEntity.getErrorResult("开发商不能为空");
+        }
+        if (StringUtils.isEmpty(property.getPropertyName())) {
+            return ResultEntity.getErrorResult("物业不能为空");
+        }
+        if (property.getUserId() == null) {
+            return ResultEntity.getErrorResult("请授权");
+        }
+        if (StringUtils.isEmpty(property.getAppraise())) {
+            return ResultEntity.getErrorResult("反对内容");
+        }
+
         boolean isInsert = propertyService.save(property);
         if (isInsert) {
             return ResultEntity.getSuccessResult("请求成功");
@@ -37,6 +58,18 @@ public class PropertyController {
     @ResponseBody
     public ResultEntity getPropertyList(@PathVariable boolean isAsc, int pageNum, int pageSize) throws Exception {
         List<Property> propertyList = propertyService.selectListByAsc(isAsc, pageNum, pageSize);
-        return ResultEntity.getSuccessResult(propertyList);
+        PageInfo<Property> pageInfo = PageInfo.of(propertyList);
+        if(pageNum>pageInfo.getPages()){
+            return ResultEntity.getSuccessResult(new PageEntity<Property>(pageInfo.getTotal(),
+                    pageInfo.getPages(),
+                    pageInfo.getPageSize(),
+                    new ArrayList<Property>()));
+        }else{
+            return ResultEntity.getSuccessResult(new PageEntity<Property>(pageInfo.getTotal(),
+                    pageInfo.getPages(),
+                    pageInfo.getPageSize(),
+                    pageInfo.getList()));
+        }
+
     }
 }
