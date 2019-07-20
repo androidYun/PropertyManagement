@@ -21,6 +21,18 @@ public class Property {
 
     private Integer userId;
 
+    private float scoreCount;
+
+
+
+    public float getScoreCount() {
+        return scoreCount;
+    }
+
+    public void setScoreCount(float scoreCount) {
+        this.scoreCount = scoreCount;
+    }
+
     public Integer getPropertyId() {
         return propertyId;
     }
@@ -99,5 +111,22 @@ public class Property {
 
     public void setUserId(Integer userId) {
         this.userId = userId;
+    }
+
+    @Override
+    public String toString() {
+        return "Property{" +
+                "propertyId=" + propertyId +
+                ", developerName='" + developerName + '\'' +
+                ", villageName='" + villageName + '\'' +
+                ", address='" + address + '\'' +
+                ", propertyName='" + propertyName + '\'' +
+                ", averageScore=" + averageScore +
+                ", supportCount=" + supportCount +
+                ", opposeCount=" + opposeCount +
+                ", appraise='" + appraise + '\'' +
+                ", userId=" + userId +
+                ", scoreCount=" + scoreCount +
+                '}';
     }
 }

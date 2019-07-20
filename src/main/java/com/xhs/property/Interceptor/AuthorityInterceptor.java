@@ -51,7 +51,11 @@ public class AuthorityInterceptor implements HandlerInterceptor {
     }
 
     public void afterCompletion(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object o, Exception e) throws Exception {
-        System.out.println("Interceptor完整");
+        String message="";
+        if(e!=null){
+            message=e.getMessage();
+        }
+        System.out.println("Interceptor完整"+ message);
     }
 
     //请求不通过，返回错误信息给客户端

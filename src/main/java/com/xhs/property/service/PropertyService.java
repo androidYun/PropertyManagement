@@ -11,5 +11,9 @@ import java.util.List;
 public interface PropertyService extends IService<Property> {
     Property selectById(int propertyId);
 
-    List<Property> selectListByAsc(boolean isAsc,int pageNum, int pageSize);
+    Property getPropertyByUserId(int userId);
+
+    List<Property> selectListByAsc(boolean isAsc, int pageNum, int pageSize);
+
+    List<Property> listBySearchName(String content);
 }

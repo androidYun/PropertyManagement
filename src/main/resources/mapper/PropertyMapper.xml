@@ -12,9 +12,10 @@
         <result column="oppose_count" jdbcType="VARCHAR" property="opposeCount"/>
         <result column="appraise" jdbcType="VARCHAR" property="appraise"/>
         <result column="user_id" jdbcType="INTEGER" property="userId"/>
+        <result column="score_count" jdbcType="FLOAT" property="scoreCount"/>
     </resultMap>
     <sql id="Base_Column_List">
-    property_id, developer_name, village_name, address, property_name, average_score, 
+    property_id, developer_name, village_name, address, property_name, average_score,
     support_count, oppose_count, appraise, user_id
   </sql>
     <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
@@ -23,12 +24,25 @@
         from property
         where property_id = #{propertyId,jdbcType=INTEGER}
     </select>
-
-    <select id="selectListByAsc" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    <select id="getPropertyByUserId" parameterType="java.lang.Integer" resultMap="BaseResultMap">
         select
-        p.*
+        <include refid="Base_Column_List"/>
+        from property
+        where user_id = #{userId,jdbcType=INTEGER} order  by property_id DESC LIMIT  1
+    </select>
+    <select id="listBySearchName" parameterType="java.lang.String" resultMap="BaseResultMap">
+        select
+        p.*,avg(pc.score) as score_count
         from property p
         left join property_content pc on p.property_id=pc.property_id
+         WHERE p.address LIKE '%'#{content}'%' OR p.developer_name LIKE "%"#{content}"%"  OR p.village_name LIKE "%"#{content}"%"  OR p.property_name LIKE "%"#{content}"%"
+         group by p.property_id order  by  score_count
+    </select>
+    <select id="selectListByAsc" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+        select
+        p.*,avg(pc.score) as score_count
+        from property p
+        left join property_content pc on p.property_id=pc.property_id group by p.property_id
         <choose>
             <when test="isAsc=1">order by p.property_id asc</when>
             <otherwise>order by p.property_id desc</otherwise>

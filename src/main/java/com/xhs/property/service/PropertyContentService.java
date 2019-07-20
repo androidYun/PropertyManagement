@@ -14,5 +14,7 @@ public interface PropertyContentService extends IService<PropertyContent> {
 
     PropertyContent selectPropertyById(int propertyContentId);
 
+    PropertyContent getPropertyContentByUserId(int userId);
+
     int updatePropertyContent(PropertyContent propertyContent);
 }

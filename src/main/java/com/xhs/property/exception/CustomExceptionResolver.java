@@ -27,6 +27,7 @@ public class CustomExceptionResolver implements HandlerExceptionResolver {
         }
         System.out.println("时间"+e.getMessage());
         errorResult.put("code", 203);
+        errorResult.put("message",e.getMessage());
         view.setAttributesMap(errorResult);
         modelAndView.setView(view);
         return modelAndView;

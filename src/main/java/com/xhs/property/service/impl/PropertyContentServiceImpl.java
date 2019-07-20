@@ -31,4 +31,8 @@ public class PropertyContentServiceImpl extends ServiceImpl<PropertyContentMappe
     public int updatePropertyContent(PropertyContent propertyContent) {
         return propertyContentMapper.updateByPrimaryKey(propertyContent);
     }
+
+    public PropertyContent getPropertyContentByUserId(int userId) {
+        return null;
+    }
 }

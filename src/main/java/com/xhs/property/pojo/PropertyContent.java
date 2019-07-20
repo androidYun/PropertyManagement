@@ -20,7 +20,17 @@ public class PropertyContent {
 
     private Date createTime;
 
+    private int userId;
+
     private List<String> imagesList;
+
+    public int getUserId() {
+        return userId;
+    }
+
+    public void setUserId(int userId) {
+        this.userId = userId;
+    }
 
     public Integer getPropertyContentId() {
         return propertyContentId;

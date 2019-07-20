@@ -15,6 +15,8 @@ public interface PropertyContentMapper extends BaseMapper<PropertyContent> {
 
     PropertyContent selectByPrimaryKey(Integer propertyContentId);
 
+    PropertyContent getPropertyContentByUserId(int userId);
+
     List<PropertyContent> selectListByPropertyId(@Param("propertyId") int propertyId, @Param("isAsc") int isAsc);
 
     int updateByPrimaryKeySelective(PropertyContent record);

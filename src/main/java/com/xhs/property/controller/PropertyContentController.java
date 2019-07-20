@@ -25,6 +25,10 @@ public class PropertyContentController {
     @RequestMapping(value = "/add", method = RequestMethod.POST)
     @ResponseBody
     public ResultEntity savePropertyContent(@RequestBody PropertyContent propertyContent) {
+        PropertyContent propertyContentByUserId = propertyContentService.getPropertyContentByUserId(propertyContent.getUserId());
+       if(propertyContentByUserId!=null){
+           return ResultEntity.getErrorResult("你已经添加过了");
+       }
         Property property = propertyService.selectById(propertyContent.getPropertyId());
         if (property == null) {
             return ResultEntity.getErrorResult("请选择物业信息");
@@ -62,6 +66,17 @@ public class PropertyContentController {
             return ResultEntity.getSuccessResult("更新成功");
         } else {
             return ResultEntity.getErrorResult("更新失败");
+        }
+    }
+
+    @RequestMapping(value = "/isSubmit",method = RequestMethod.GET)
+    @ResponseBody
+    public ResultEntity isSubmit(int userId){
+        PropertyContent propertyContentByUserId = propertyContentService.getPropertyContentByUserId(userId);
+        if(propertyContentByUserId!=null){
+            return ResultEntity.getSuccessResult(true);
+        }else{
+            return ResultEntity.getSuccessResult(false);
         }
     }
 }

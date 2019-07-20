@@ -14,7 +14,11 @@ public interface PropertyMapper extends BaseMapper<Property> {
 
     Property selectByPrimaryKey(Integer propertyId);
 
+    Property getPropertyByUserId(int userId);
+
     List<Property> selectListByAsc(int isAsc);
+
+    List<Property> listBySearchName(String content);
 
     int updateByPrimaryKeySelective(Property record);
 

@@ -10,19 +10,26 @@
         <result column="state" jdbcType="INTEGER" property="state"/>
         <result column="fail_pass_reason" jdbcType="VARCHAR" property="failPassReason"/>
         <result column="create_time" jdbcType="TIMESTAMP" property="createTime"/>
+        <result column="user_id" jdbcType="TIMESTAMP" property="userId"/>
         <collection property="imagesList" ofType="java.lang.String" javaType="list">
             <result column="url"/>
         </collection>
     </resultMap>
     <sql id="Base_Column_List">
     property_content_id, property_id, good_content, bad_content, score, state, fail_pass_reason, 
-    create_time
+    create_time,user_id
   </sql>
     <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
         select
         <include refid="Base_Column_List"/>
         from property_content
         where property_content_id = #{propertyContentId,jdbcType=INTEGER}
+    </select>
+    <select id="getPropertyContentByUserId" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+        select distinct
+        <include refid="Base_Column_List"/>
+        from property_content
+        where user_id = #{userId,jdbcType=INTEGER}
     </select>
     <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
     delete from property_content
@@ -73,6 +80,9 @@
             <if test="createTime != null">
                 create_time,
             </if>
+            <if test="userId != null">
+                user_id,
+            </if>
         </trim>
         <trim prefix="values (" suffix=")" suffixOverrides=",">
             <if test="propertyContentId != null">
@@ -98,6 +108,9 @@
             </if>
             <if test="createTime != null">
                 #{createTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="userId != null">
+                #{userId,jdbcType=INTEGER},
             </if>
         </trim>
     </insert>
@@ -125,6 +138,9 @@
             <if test="createTime != null">
                 create_time = #{createTime,jdbcType=TIMESTAMP},
             </if>
+            <if test="userId != null">
+                user_id = #{userId,jdbcType=INTEGER},
+            </if>
         </set>
         where property_content_id = #{propertyContentId,jdbcType=INTEGER}
     </update>
@@ -136,7 +152,8 @@
       score = #{score,jdbcType=INTEGER},
       state = #{state,jdbcType=INTEGER},
       fail_pass_reason = #{failPassReason,jdbcType=VARCHAR},
-      create_time = #{createTime,jdbcType=TIMESTAMP}
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      user_id=#{userId,jdbcType=INTEGER},
     where property_content_id = #{propertyContentId,jdbcType=INTEGER}
   </update>
 </mapper>

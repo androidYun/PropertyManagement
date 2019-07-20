@@ -24,4 +24,12 @@ public class PropertyServiceImpl extends ServiceImpl<PropertyMapper, Property> i
         PageHelper.startPage(pageNum, pageSize);
         return propertyMapper.selectListByAsc(isAsc ? 1 : 2);
     }
+
+    public List<Property> listBySearchName(String content) {
+        return propertyMapper.listBySearchName(content);
+    }
+
+    public Property getPropertyByUserId(int userId) {
+        return propertyMapper.getPropertyByUserId(userId);
+    }
 }

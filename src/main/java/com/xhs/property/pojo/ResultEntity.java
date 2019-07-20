@@ -19,7 +19,7 @@ public class ResultEntity<T> {
         ResultEntity resultEntity = new ResultEntity();
         resultEntity.data = null;
         resultEntity.message = errorMessage;
-        resultEntity.code = 203;
+        resultEntity.code = 208;
         return resultEntity;
     }
 
