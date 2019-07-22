@@ -7,56 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c8f698d6-7e62-4ef9-bf4a-1d2c1b933d1e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2249c0ca-805f-483b-b379-c5800af971b7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2249c0ca-805f-483b-b379-c5800af971b7.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xhs/property/Interceptor/AuthorityInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xhs/property/Interceptor/AuthorityInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xhs/property/controller/PropertyContentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xhs/property/controller/PropertyContentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xhs/property/controller/PropertyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xhs/property/controller/PropertyController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xhs/property/exception/CustomExceptionResolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xhs/property/exception/CustomExceptionResolver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xhs/property/mapper/PropertyContentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xhs/property/mapper/PropertyContentMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xhs/property/mapper/PropertyMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xhs/property/mapper/PropertyMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xhs/property/pojo/Property.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xhs/property/pojo/Property.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xhs/property/pojo/PropertyContent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xhs/property/pojo/PropertyContent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xhs/property/pojo/ResultEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xhs/property/pojo/ResultEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xhs/property/service/PropertyContentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xhs/property/service/PropertyContentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xhs/property/service/PropertyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xhs/property/service/PropertyService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xhs/property/service/impl/PropertyContentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xhs/property/service/impl/PropertyContentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xhs/property/service/impl/PropertyServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xhs/property/service/impl/PropertyServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/PropertyContentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/PropertyContentMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/PropertyMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/PropertyMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring-redis.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring-redis.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/PropertyManagement-1.0-SNAPSHOT/WEB-INF/classes/com/xhs/property/Interceptor/AuthorityInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/PropertyManagement-1.0-SNAPSHOT/WEB-INF/classes/com/xhs/property/Interceptor/AuthorityInterceptor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/PropertyManagement-1.0-SNAPSHOT/WEB-INF/classes/com/xhs/property/controller/PropertyContentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/PropertyManagement-1.0-SNAPSHOT/WEB-INF/classes/com/xhs/property/controller/PropertyContentController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/PropertyManagement-1.0-SNAPSHOT/WEB-INF/classes/com/xhs/property/controller/PropertyController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/PropertyManagement-1.0-SNAPSHOT/WEB-INF/classes/com/xhs/property/controller/PropertyController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/PropertyManagement-1.0-SNAPSHOT/WEB-INF/classes/com/xhs/property/exception/CustomExceptionResolver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/PropertyManagement-1.0-SNAPSHOT/WEB-INF/classes/com/xhs/property/exception/CustomExceptionResolver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/PropertyManagement-1.0-SNAPSHOT/WEB-INF/classes/com/xhs/property/mapper/PropertyContentMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/PropertyManagement-1.0-SNAPSHOT/WEB-INF/classes/com/xhs/property/mapper/PropertyContentMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/PropertyManagement-1.0-SNAPSHOT/WEB-INF/classes/com/xhs/property/mapper/PropertyMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/PropertyManagement-1.0-SNAPSHOT/WEB-INF/classes/com/xhs/property/mapper/PropertyMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/PropertyManagement-1.0-SNAPSHOT/WEB-INF/classes/com/xhs/property/pojo/Property.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/PropertyManagement-1.0-SNAPSHOT/WEB-INF/classes/com/xhs/property/pojo/Property.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/PropertyManagement-1.0-SNAPSHOT/WEB-INF/classes/com/xhs/property/pojo/PropertyContent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/PropertyManagement-1.0-SNAPSHOT/WEB-INF/classes/com/xhs/property/pojo/PropertyContent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/PropertyManagement-1.0-SNAPSHOT/WEB-INF/classes/com/xhs/property/pojo/ResultEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/PropertyManagement-1.0-SNAPSHOT/WEB-INF/classes/com/xhs/property/pojo/ResultEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/PropertyManagement-1.0-SNAPSHOT/WEB-INF/classes/com/xhs/property/service/PropertyContentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/PropertyManagement-1.0-SNAPSHOT/WEB-INF/classes/com/xhs/property/service/PropertyContentService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/PropertyManagement-1.0-SNAPSHOT/WEB-INF/classes/com/xhs/property/service/PropertyService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/PropertyManagement-1.0-SNAPSHOT/WEB-INF/classes/com/xhs/property/service/PropertyService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/PropertyManagement-1.0-SNAPSHOT/WEB-INF/classes/com/xhs/property/service/impl/PropertyContentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/PropertyManagement-1.0-SNAPSHOT/WEB-INF/classes/com/xhs/property/service/impl/PropertyContentServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/PropertyManagement-1.0-SNAPSHOT/WEB-INF/classes/com/xhs/property/service/impl/PropertyServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/PropertyManagement-1.0-SNAPSHOT/WEB-INF/classes/com/xhs/property/service/impl/PropertyServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/PropertyManagement-1.0-SNAPSHOT/WEB-INF/classes/mapper/PropertyContentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/PropertyManagement-1.0-SNAPSHOT/WEB-INF/classes/mapper/PropertyContentMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/PropertyManagement-1.0-SNAPSHOT/WEB-INF/classes/mapper/PropertyMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/PropertyManagement-1.0-SNAPSHOT/WEB-INF/classes/mapper/PropertyMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/PropertyManagement-1.0-SNAPSHOT/WEB-INF/classes/spring-redis.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/PropertyManagement-1.0-SNAPSHOT/WEB-INF/classes/spring-redis.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xhs/property/Interceptor/AuthorityInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xhs/property/Interceptor/AuthorityInterceptor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xhs/property/controller/PropertyContentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xhs/property/controller/PropertyContentController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xhs/property/controller/PropertyController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xhs/property/controller/PropertyController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xhs/property/exception/CustomExceptionResolver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xhs/property/exception/CustomExceptionResolver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xhs/property/mapper/PropertyContentMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xhs/property/mapper/PropertyContentMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xhs/property/mapper/PropertyMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xhs/property/mapper/PropertyMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xhs/property/pojo/Property.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xhs/property/pojo/Property.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xhs/property/pojo/PropertyContent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xhs/property/pojo/PropertyContent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xhs/property/pojo/ResultEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xhs/property/pojo/ResultEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xhs/property/service/PropertyContentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xhs/property/service/PropertyContentService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xhs/property/service/PropertyService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xhs/property/service/PropertyService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xhs/property/service/impl/PropertyContentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xhs/property/service/impl/PropertyContentServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/xhs/property/service/impl/PropertyServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/xhs/property/service/impl/PropertyServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/PropertyContentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/PropertyContentMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/PropertyMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/PropertyMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spring-redis.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring-redis.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -143,8 +94,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/xhs/property/controller/FileController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="24" column="30" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="30" />
+            <state relative-caret-position="189">
+              <caret line="47" column="28" lean-forward="true" selection-start-line="47" selection-start-column="28" selection-end-line="47" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -667,12 +618,12 @@
       <workItem from="1563421384066" duration="2768000" />
       <workItem from="1563438037450" duration="6028000" />
       <workItem from="1563496386005" duration="11873000" />
-      <workItem from="1563591095292" duration="1289000" />
+      <workItem from="1563591095292" duration="1793000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="151579000" />
+    <option name="totallyTimeSpent" value="152083000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -685,9 +636,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49162012" visible="true" weight="0.25426438" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49162012" visible="true" weight="0.25426438" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24935733" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -704,7 +654,7 @@
       <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.5051414" side_tool="true" weight="0.34776536" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" sideWeight="0.49743262" weight="0.32739422" />
       <window_info anchor="bottom" id="Spring" order="8" weight="0.32793522" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.311804" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.311804" />
       <window_info anchor="bottom" x="22" y="314" width="1556" height="232" id="Application Servers" order="10" sideWeight="0.4974293" type="FLOATING" weight="0.32402235" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.061247215" />
       <window_info anchor="bottom" id="Debug" order="12" sideWeight="0.49485862" weight="0.3585746" />
@@ -1173,8 +1123,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xhs/property/controller/FileController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="24" column="30" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="30" />
+        <state relative-caret-position="189">
+          <caret line="47" column="28" lean-forward="true" selection-start-line="47" selection-start-column="28" selection-end-line="47" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
